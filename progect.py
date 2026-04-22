@@ -221,7 +221,7 @@ c1=st.columns(4)
 c2=st.columns(4)
 c3=st.columns(4)
 c4=st.columns(1)
-st.markdown("***")
+
 st.markdown("""
 <div style='text-align:center; margin-top:30px;'>
     <hr>
