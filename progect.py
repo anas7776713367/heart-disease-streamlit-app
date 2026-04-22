@@ -147,12 +147,8 @@ def enter():
             data1=st.number_input("العمر",0.0,1000.0)
             data2 = st.selectbox("الجنس", ["ذكر", "انثى"])
             data2 = 1 if data2=="ذكر" else 0
-            """"
-             data2=st.text_input("الجنس")
-            if data2=="ذكر":
-                data2=1
-            elif data2=="انثى":
-                data2=0"""
+            
+   
         
             data3=st.number_input("الام الصدر",0.0,1000.0)
             data4=st.number_input("ضغط الدم",0.0,1000.0)
@@ -227,12 +223,15 @@ c3=st.columns(4)
 c4=st.columns(1)
 st.markdown("***")
 st.markdown("""
-<div style='text-align: center;'>
-    <p>تم تطوير هذا المشروع كجزء من المتطلبات الأكاديمية</p>
-    <strong>قسم الذكاء الاصطناعي - جامعة تعز</strong><br>
-    <em>بإشراف نخبة من دكتور المقرر</em>
-    <p>عبد الناصر 3</p>
-    <p>عمل الطالب/ انس محمد عبد الجليل </p>
+<div style='text-align:center; margin-top:30px;'>
+    <hr>
+    <p> تم تطوير هذا المشروع بواسطة: <b>انس محمد عبد الجليل</b></p>
+    <p> قسم الذكاء الاصطناعي - جامعة تعز</p>
 </div>
+""", unsafe_allow_html=True)
+st.markdown("""
+<p style='text-align:center;'>
+🔗 رابط المشروع: https://your-app.streamlit.app
+</p>
 """, unsafe_allow_html=True)
 
