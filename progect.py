@@ -23,20 +23,40 @@ rtl="""
 
 st.markdown(rtl,unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center; color: #E63946;'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #E63946;'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h3>", unsafe_allow_html=True)
 st.markdown("---")
 st.image("titl_header.jpg")
-st.markdown("---")
+st.markdown("""
+        <style>
+                .anas{
+                    border:solid;
+                    padding:5%}
+                .addres{
+                    border:double 10px #000000  ;
+                    border-radius:10%;
+                    padding:5%}
+                h3{
+                    border:solid green;
+                    border-radius:10%;
+                    font-size:20px;
+                   }
+                .stNumberInput {
+                border:solid .1em;
+                border-radius:10%;
+                text-color:red}
+        </style>
+""",unsafe_allow_html=True)
 st.markdown("<h2 style='color: #2E86C1; font-family:tahoma'>فكرة وأهداف المشروع</h2>", unsafe_allow_html=True)
 st.markdown("""
-            <p>بناءً على التوجهات الحديثة في دمج التكنولوجيا بالقطاع الصحي، يأتي هذا المشروع كخطوة نحو تعزيز الرعاية الصحية الرقمية. </p>
-<p><em style="color:red;text-align:center;font-size:40px">:الهدف العام</em></p>
-<p>تطوير نظام خبير قادر على تقديم تقييم أولي لمخاطر الإصابة بأمراض القلب باستخدام خوارزميات الذكاء الاصطناعي، مما يساهم في تقليل عبء الفحوصات اليدوية وتوفير تشخيص مبكر دقيق.</p>
-<h2 style="color:red ">:المميزات الرئيسية</h2>      
-<p> <strong style="color:green">دقةعالية :</strong> يعتمد النظام على نماذج رياضية مدربة على بيانات طبية حقيقية.</p>
-<p><strong style="color:green"> سرعة الاستجابة:</strong> تحليل فوري للمؤشرات الحيوية وتقديم النتيجة في ثوانٍ</p>
-<p><strong style="color:green"> واجهة مستخدم سهلة:</strong>  : تصميم يراعي سهولة الاستخدام للمختصين والمرضى على حد سواء.</p>
-     
+        <div  class="anas">
+                            <p>بناءً على التوجهات الحديثة في دمج التكنولوجيا بالقطاع الصحي، يأتي هذا المشروع كخطوة نحو تعزيز الرعاية الصحية الرقمية. </p>
+                <p><em style="color:red;text-align:center;font-size:40px">:الهدف العام</em></p>
+                <p>تطوير نظام خبير قادر على تقديم تقييم أولي لمخاطر الإصابة بأمراض القلب باستخدام خوارزميات الذكاء الاصطناعي، مما يساهم في تقليل عبء الفحوصات اليدوية وتوفير تشخيص مبكر دقيق.</p>
+                <h2 style="color:red ">:المميزات الرئيسية</h2>      
+                <p> <strong style="color:green">دقةعالية :</strong> يعتمد النظام على نماذج رياضية مدربة على بيانات طبية حقيقية.</p>
+                <p><strong style="color:green"> سرعة الاستجابة:</strong> تحليل فوري للمؤشرات الحيوية وتقديم النتيجة في ثوانٍ</p>
+                <p><strong style="color:green"> واجهة مستخدم سهلة:</strong>  : تصميم يراعي سهولة الاستخدام للمختصين والمرضى على حد سواء.</p>
+        </div>     
 
 """,unsafe_allow_html=True)
 
@@ -81,17 +101,12 @@ def split_data():
         st.dataframe(x_train)
    
     y_trin=data.iloc[:,col-1:].values
-    if st.sidebar.checkbox("عرض بيانات التشخيص"):
-        st.markdown("---")
-        st.subheader("مصفوفة بيانات الهدف")
-        st.dataframe(y_trin)
+    
+    
 
     wheghet=np.array([0,0,0,0,0,0,0,0,0,0,0,0,0,0])
     wheghet=wheghet.reshape(-1,1)
-    if st.sidebar.checkbox("عرض الاوزان"):
-        st.markdown("---")
-        st.subheader("مصفوفة الاوزان")
-        st.dataframe(wheghet.reshape(-1))
+    
     return x_train,y_trin,wheghet
 X_trin,Y_train,w=split_data()
 
@@ -130,12 +145,6 @@ def normal():
     normaltion=np.dot(revrs,m)
     return normaltion
 normal_w=normal()
-
-if st.sidebar.checkbox("عرض الاوزان بعد التدريب"):
-  with  col3:
-    st.markdown("---")
-    st.subheader("الاوزان بعد التعلم")
-    st.dataframe(new_w)
 colom1,colum2,colum3=st.columns([2,4,2])
 st.markdown("---")
 
@@ -181,7 +190,7 @@ with colum2:
                 st.subheader(" التوقع من البيانات الجديدة")
                 perd=function_train(a,new_w)
             
-            if (perd==0).all():
+            if (perd==1).all():
                 st.balloons()
                 st.success("الناتج سليم")
                 st.image("توقع_سليم.jpg")
@@ -221,17 +230,16 @@ c1=st.columns(4)
 c2=st.columns(4)
 c3=st.columns(4)
 c4=st.columns(1)
-
+st.markdown("***")
 st.markdown("""
-<div style='text-align:center; margin-top:30px;'>
+<div class="addres" style='text-align:center; margin-top:30px; color:000000'>
     <hr>
-    <p> تم تطوير هذا المشروع بواسطة: <b>انس محمد عبد الجليل</b></p>
+    <p>   تم تطوير هذا المشروع بواسطة الطالب: <b> أنس محمد عبد ألجليل سعيد</b></p>
     <p> قسم الذكاء الاصطناعي - جامعة تعز</p>
+    <p style='text-align:center;'>
+🔗 رابط المشروع: https://your-app.streamlit.app
+</p>
 </div>
 """, unsafe_allow_html=True)
-st.markdown("""
-<p style='text-align:center;'>
-🔗 رابط المشروع: https://heart-disease-app-app-y6xuu4euvadzsfkbn8aka6.streamlit.app/
-</p>
-""", unsafe_allow_html=True)
+
 
