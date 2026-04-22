@@ -237,7 +237,7 @@ st.markdown("""
     <p>   تم تطوير هذا المشروع بواسطة الطالب: <b> أنس محمد عبد ألجليل سعيد</b></p>
     <p> قسم الذكاء الاصطناعي - جامعة تعز</p>
     <p style='text-align:center;'>
-🔗 رابط المشروع: https://your-app.streamlit.app
+🔗 رابط المشروع: https://heart-disease-app-app-y6xuu4euvadzsfkbn8aka6.streamlit.app/
 </p>
 </div>
 """, unsafe_allow_html=True)
