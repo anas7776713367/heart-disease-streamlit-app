@@ -181,7 +181,7 @@ with colum2:
                 st.subheader(" التوقع من البيانات الجديدة")
                 perd=function_train(a,new_w)
             
-            if (perd==1).all():
+            if (perd==0).all():
                 st.balloons()
                 st.success("الناتج سليم")
                 st.image("توقع_سليم.jpg")
