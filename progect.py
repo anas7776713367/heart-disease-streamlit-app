@@ -231,7 +231,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("""
 <p style='text-align:center;'>
-🔗 رابط المشروع: https://your-app.streamlit.app
+🔗 رابط المشروع: https://heart-disease-app-app-y6xuu4euvadzsfkbn8aka6.streamlit.app/
 </p>
 """, unsafe_allow_html=True)
 
