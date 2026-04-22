@@ -224,6 +224,8 @@ if st.sidebar.checkbox("تكلفة النموذج"):
     fig,ax=plt.subplots()
     plt.plot(cst,label="The Cost")
     plt.legend()
+    plt.xlabel("Training Repeat")
+    plt.ylabel("Cost")
     plt.grid(True)
     st.pyplot(fig)
 c1=st.columns(4)
