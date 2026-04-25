@@ -8,7 +8,7 @@ st.set_page_config(page_title="Heart AI", layout="wide")
 rtl="""
 <style>
  
-   .main block-container{
+   main block-container{
    direction: RTL;
    text-align:right;}
    [data-testid="stSidebar"]{
