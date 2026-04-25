@@ -89,14 +89,14 @@ data.insert(0,"عمود الواحدات",1)
 #@st.cache_data
 def split_data():
     st.markdown("---")
-    if st.sidebar.checkbox("عرض باينات النموذج"):
+    if st.sidebar.checkbox("📂 عرض بيانات النموذج"):
         rwos=st.number_input("عدد الصفوف",5,data.shape[0])
         st.dataframe(data.head(rwos))
     col=data.shape[1]
     
     x_train=data.iloc[:,0:col-1].values
     st.markdown("---")
-    if st.sidebar.checkbox("عرض بيانات التعلم"):
+    if st.sidebar.checkbox("📊 بيانات التعلم"):
         st.subheader("مصفوفة بيانات التعلم")
         st.dataframe(x_train)
    
@@ -223,7 +223,7 @@ def acuorcy():
     mn=pd.Series(m)
     st.write(mn)
     
-if st.sidebar.checkbox("دقة النموذج بعد التعلم"):
+if st.sidebar.checkbox("📈 دقة النموذج"):
     acuorcy()
     st.markdown("---")
 
