@@ -7,11 +7,8 @@ st.set_page_config(page_title="Heart AI", layout="wide")
 
 rtl="""
 <style>
-   /* خلفية حديثة */
-  .stApp {
-    background: linear-gradient(120deg, #eef2f3, #dfe9f3);
-    }
-   main block-container{
+ 
+   .main block-container{
    direction: RTL;
    text-align:right;}
    [data-testid="stSidebar"]{
