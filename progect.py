@@ -3,9 +3,15 @@ import numpy as np
 import streamlit as st 
 import seaborn as sns
 import matplotlib.pyplot as plt
+st.set_page_config(page_title="Heart AI", layout="wide")
+
 rtl="""
 <style>
-   main block-container{
+   /* خلفية حديثة */
+  .stApp {
+    background: linear-gradient(120deg, #eef2f3, #dfe9f3);
+    }
+   .main block-container{
    direction: RTL;
    text-align:right;}
    [data-testid="stSidebar"]{
