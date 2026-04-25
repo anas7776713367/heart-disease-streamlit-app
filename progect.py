@@ -228,7 +228,7 @@ if st.sidebar.checkbox("📈 دقة النموذج"):
     st.markdown("---")
 
  #الرسومات التوضيحية  
-if st.sidebar.checkbox("تكلفة النموذج"):   
+if st.sidebar.checkbox("📊 تكلفة النموذج"):   
     st.subheader("تكلفة النموذج")
     mn=pd.DataFrame([cst[n-1]],[0],columns=["التكلفة النهائية"])
     mn["التكلفة الاولية"]=cst[0]
