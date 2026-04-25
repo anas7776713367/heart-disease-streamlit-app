@@ -137,6 +137,18 @@ n=100000
 if st.sidebar.button("تدريب النموذج") :    
       new_w=cost(X_trin,Y_train,w,alpha,n)     
 new_w,cst=cost(X_trin,Y_train,w,alpha,n)
+c1, c2, c3 = st.columns(3)
+
+with c1:
+    st.markdown('<div class="card">🧠 <br><b>Model</b><br>Logistic Regression</div>', unsafe_allow_html=True)
+
+with c2:
+    st.markdown('<div class="card">📊 <br><b>Dataset</b><br>Heart Disease</div>', unsafe_allow_html=True)
+
+with c3:
+    st.markdown('<div class="card">⚡ <br><b>Status</b><br>Ready</div>', unsafe_allow_html=True)
+
+st.markdown("---")
 
 #دالة تعديل الاوزان باستخدام الدالة العادية
 def normal():
