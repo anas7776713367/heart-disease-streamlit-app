@@ -41,8 +41,8 @@ st.markdown("""
                     border-radius:10px;
                     padding:5%}
                 .addres{
-                    border:dashed 5px #000000  ;
-                    border-radius:10%;
+                    border:dashed 2px #000000  ;
+                    border-radius:15%;
                     padding:5%}
                 h3{
                   /*  border:dashed green;*/
