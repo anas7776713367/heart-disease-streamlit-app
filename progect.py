@@ -26,7 +26,7 @@ rtl="""
        
        }
        h4{
-       background-color:bluk
+       background-color:red;
        }
 </style>"""
 
