@@ -40,7 +40,7 @@ st.markdown("""
                     border:dashed;
                     padding:5%}
                 .addres{
-                    border:dashed 10px #000000  ;
+                    border:dashed 5px #000000  ;
                     border-radius:10%;
                     padding:5%}
                 h3{
