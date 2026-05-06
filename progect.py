@@ -31,7 +31,7 @@ rtl="""
 
 st.markdown(rtl,unsafe_allow_html=True)
 
-st.markdown("<h3 style='text-align: center; color: #E63946;padding:1px 50px'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #E63946;'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h3>", unsafe_allow_html=True)
 st.markdown("---")
 st.image("titl_header.jpg")
 st.markdown("""
@@ -44,9 +44,9 @@ st.markdown("""
                     border-radius:10%;
                     padding:5%}
                 h3{
-                    border:solid green;
+                    border:dashed green;
                     border-radius:10%;
-                    padding:1px 50px;
+                    margin:1px 50px;
                     
                     font-size:20px;
                    }
