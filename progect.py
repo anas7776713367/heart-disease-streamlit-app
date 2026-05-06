@@ -47,7 +47,7 @@ st.markdown("""
                     border:dashed green;
                     border-radius:10%;
                     margin:1px 50px;
-                    width:30px;
+                    width:300px;
                     font-size:20px;
                    }
                 .stNumberInput {
