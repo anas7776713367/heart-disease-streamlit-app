@@ -46,8 +46,8 @@ st.markdown("""
                 h3{
                     border:dashed green;
                     border-radius:10%;
-                    margin:1px 50px;
                     width:300px;
+                    font-align:right;
                     font-size:20px;
                    }
                 .stNumberInput {
