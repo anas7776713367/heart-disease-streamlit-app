@@ -38,6 +38,7 @@ st.markdown("""
         <style>
                 .anas{
                     border:dashed;
+                    border-radius:10px;
                     padding:5%}
                 .addres{
                     border:dashed 5px #000000  ;
