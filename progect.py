@@ -56,13 +56,13 @@ st.markdown("""
                 text-color:red}
         </style>
 """,unsafe_allow_html=True)
-st.markdown("<h2 style='color: #2E86C1; font-family:tahoma'>فكرة وأهداف المشروع</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: #2E86C1; font-family:tahoma'>فكرة وأهداف المشروع</h3>", unsafe_allow_html=True)
 st.markdown("""
         <div  class="anas">
                             <p>بناءً على التوجهات الحديثة في دمج التكنولوجيا بالقطاع الصحي، يأتي هذا المشروع كخطوة نحو تعزيز الرعاية الصحية الرقمية. </p>
-                <p><em style="color:red;text-align:center;font-size:40px">:الهدف العام</em></p>
+                <p><em style="color:red;text-align:center;font-size:30px">:الهدف العام</em></p>
                 <p>تطوير نظام خبير قادر على تقديم تقييم أولي لمخاطر الإصابة بأمراض القلب باستخدام خوارزميات الذكاء الاصطناعي، مما يساهم في تقليل عبء الفحوصات اليدوية وتوفير تشخيص مبكر دقيق.</p>
-                <h2 style="color:red ">:المميزات الرئيسية</h2>      
+                <h4 style="color:red ">:المميزات الرئيسية</h4>      
                 <p> <strong style="color:green">دقةعالية :</strong> يعتمد النظام على نماذج رياضية مدربة على بيانات طبية حقيقية.</p>
                 <p><strong style="color:green"> سرعة الاستجابة:</strong> تحليل فوري للمؤشرات الحيوية وتقديم النتيجة في ثوانٍ</p>
                 <p><strong style="color:green"> واجهة مستخدم سهلة:</strong>  : تصميم يراعي سهولة الاستخدام للمختصين والمرضى على حد سواء.</p>
