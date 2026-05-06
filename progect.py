@@ -44,9 +44,8 @@ st.markdown("""
                     border-radius:10%;
                     padding:5%}
                 h3{
-                    border:dashed green;
+                  /*  border:dashed green;*/
                     border-radius:10%;
-                    width:300px;
                     font-align:right;
                     font-size:20px;
                    }
