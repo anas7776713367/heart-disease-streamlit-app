@@ -20,7 +20,7 @@ rtl="""
        direction:RTL;
        text-align:right;
        }
-    h1,h2,h3p,div,label{
+    h1,h2,h3,p,div,label{
        text-align:right;
        font-family:'Tahoma',sans-serf;
        
