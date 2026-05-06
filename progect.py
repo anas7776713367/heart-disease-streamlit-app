@@ -31,7 +31,7 @@ rtl="""
 
 st.markdown(rtl,unsafe_allow_html=True)
 
-st.markdown("<h4 style='text-align: center; color: #E63946;'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: #E63946;background-color:bluk'>❤️ نظام التشخيص الذكي والتنبؤ بأمراض القلب</h4>", unsafe_allow_html=True)
 st.markdown("---")
 st.image("titl_header.jpg")
 st.markdown("""
