@@ -37,7 +37,7 @@ st.image("titl_header.jpg")
 st.markdown("""
         <style>
                 .anas{
-                    border:solid;
+                    border:dashed;
                     padding:5%}
                 .addres{
                     border:double 10px #000000  ;
