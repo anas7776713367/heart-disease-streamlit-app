@@ -203,7 +203,7 @@ with colum2:
         
             
             a=enter()
-            if st.button("ارسال البانات",use_container_width=True,type="primary"):
+            if st.button("ارسال البيانات",use_container_width=True,type="primary"):
 
                 st.subheader(" التوقع من البيانات الجديدة")
                 perd=function_train(a,new_w)
