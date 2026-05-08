@@ -46,6 +46,7 @@ st.markdown("""
                 .addres{
                     border:dashed 2px #000000  ;
                     border-radius:15%;
+                    font-size:3;
                     padding:5%}
                 h3{
                   /*  border:dashed green;*/
@@ -154,7 +155,7 @@ c1, c2, c3 = st.columns(3)
 
 
 
-st.markdown("---")
+
 
 #دالة تعديل الاوزان باستخدام الدالة العادية
 def normal():
@@ -164,7 +165,6 @@ def normal():
     return normaltion
 normal_w=normal()
 colom1,colum2,colum3=st.columns([2,4,2])
-st.markdown("---")
 
 
 def enter():
@@ -231,7 +231,7 @@ def acuorcy():
     
 if st.sidebar.checkbox("📈 دقة النموذج"):
     acuorcy()
-    st.markdown("---")
+
 
  #الرسومات التوضيحية  
 if st.sidebar.checkbox("📊 تكلفة النموذج"):   
